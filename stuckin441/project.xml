@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- NMML reference: https://gist.github.com/1763850 -->
+	
+	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
+	<meta title="New Project" package="NewProject" version="1.0.0" company="John Doughty" />
+	
+	<!-- output -->
+	<app main="Main" file="Stuck" path="bin" />
+	
+	<window background="#000000" fps="60" />
+	<window width="760" height="660" unless="mobile" />
+	<window orientation="landscape" vsync="false" antialiasing="0" if="cpp" />
+	
+	<!-- classpath, haxe libs -->
+	<source path="source" />
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+	<assets path="assetSWFs"/>
+	<library path="assetSWFs/test.swf" id="test" preload="true" generate="true" />
+	
+</project>
